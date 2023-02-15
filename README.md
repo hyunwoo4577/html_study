@@ -1,4 +1,4 @@
-   <h1>반응형 웹디자인&웹퍼블리셔 양성과정 버전기록</h1>
+  <h1>반응형 웹디자인&웹퍼블리셔 양성과정 버전기록</h1>
    <p>23.02.13 시작 - HTML</p>
    <p>H1~H6, p, br, inline, block</p>
    <p>H1~H3는 검색키워드로 활용가능하다. H4~H6 꼭필요한 경우만 이용하거나 권장안함<p>
@@ -8,6 +8,7 @@
    <p><em>em</em>,<strong>strong</strong>, blockquote, q, address, code, hr, del, s, sub, sup</p>
    <p>gnb, lnb, snb, fnb, Breadcrumbs</p>
    <p>유나쌤 블로그 참조 - https://webty.tistory.com/85</p> <blockquote cite="https://webty.tistory.com/85"> 
+   <hr>
    <h2>23.02.15 - HTML - 문단태그</h2>
    <ul>
       <li>ul,ol,li 순서있는 목록 없는 목록 구분 확실히 해야함.<li>
@@ -17,3 +18,6 @@
       <li>h태그의 경우에도 연속되는 목록이면 li로 대체 가능하다.</li>
       <li>li의 형제는 li만 가능하고 다른 태그를 쓰려면 자식으로 사용한다.</li>
    </ul>
+   <p>정의형태그인 dt,dd는 dl의 자식으로만 올 수 있다.</p>
+   <p>낮은 레벨의 h를 대체해서 사용 할 수 있다.</p>
+   <p>다른 태그는 dl안에 들어갈 수 없고 dt,dd에 넣어야 한다.</p>
