@@ -29,4 +29,10 @@
     <dd>div는 구역임으로 반드시 class를 이용해서 이름을 지정해야한다. ex)div class="title_path_top"/div class="contents_btm"</dd>
     <dd>dt를 보이지 않게 숨길 수 있다 <dt class="skip"></dd>
    </dl>
+   <dl>
+     <dt>레이아웃,이미지,비디오 기본&활용 공부
+     <dd>span 2개 이상의 인라인 요소를 묶을 때 사용하며 의미없는 디자인 위치를 묶을 때 사용한다.
+     <dd>a href=" " 링크 주소 속성 href 속성 안 값은 링크 목적지 주소를 정확히 입력해야 한다.
+     <dd>a href=" " 절대경로와 상대경로
+   </>
    
