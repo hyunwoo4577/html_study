@@ -45,3 +45,15 @@
       <dd>메일은 mailto:메일아이디@메일주소 로 작성한다.</dd>
       <dd>전화번호는 tel:국가번호.전화번호앞자리.전화번호뒷자리로 작성한다.</dd>
    </dl>
+  <hr>
+  <h2>23.02.21-HTML-form_</h2>
+  <form action="#" method="get">
+  <fieldset>
+  <legend>form 퀴즈</legend>
+  <span>다음 중 label for 와 연관된 input 속성은></span><br>
+  <label><input type="radio name"quiz" value="id">1. id</label><br>
+  <label><input type="radio name"quiz" value="class">2. class</label><br>
+  <label><input type="radio name"quiz" value="name">3. name</label>
+  
+  </fieldset>
+  </form>
