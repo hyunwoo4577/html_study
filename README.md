@@ -66,7 +66,7 @@
   <h2>23.02.22-HTML-form_</h2>
   
   <hr>
-  <h2>23.02.23-HTML-form_</h2>
+  <h2>23.02.23-CSS_기초_</h2>
   <h3>css진행 전 주의사항</h3>
   <p>사용자가 css로 웹을 디자인 하기 전 HTML 이 먼저 디자인된 모습을 가져선 안된다.
     => css 초기화 작업(reset css) </p>
@@ -85,3 +85,15 @@
   <p>- 2개 이상의 선택자를 묶을 때 사용한다. ,(콤마)로 표시한다.</p>
   <h3> 형제선택자 </h3>
   <p>- 특정태그에 다음에 오는 모든 형제들을 선택한다.~(물결)로 표시한다.</p>
+  <h3> 글꼴지정 </h3>
+  <p>글꼴적용방법1. 사용자 컴퓨터에 내장된 글꼴 불러오기
+     (위)주의사항 : 해당글꼴이 접속한 사용자에게 없을 경우 글꼴이 임의의 다른 글꼴로 대체될 수 있다.
+     font-family: '맑은 고딕','sans-serif';
+     font-family: '궁서체','serif';
+
+     글꼴적용방법2. 웹 주소 글꼴을 가져오는 방법
+    https://fonts.google.com/
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');-위치:가장 위
+    font-family: 'Noto Sans KR', sans-serif;-위치:CSS초기화 작업 상단
+    폰트 사이즈 px=>em 후에 {font-size:1.375em;}</p>
+    
