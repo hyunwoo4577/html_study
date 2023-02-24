@@ -96,4 +96,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');-위치:가장 위
     font-family: 'Noto Sans KR', sans-serif;-위치:CSS초기화 작업 상단
     폰트 사이즈 px=>em 후에 {font-size:1.375em;}</p>
-    
+  <h2>23.02.24-CSS_HTML</h2>
+      
+       
