@@ -1,0 +1,31 @@
+.box {
+    background-color: aqua;
+}
+.box .container { 
+    background-color: yellow;
+    width: 800px; padding: 50px;
+    margin:0 auto; /* 가운데에 정열,block에만 적용가능 inline은 안된다-크기와 여백을 인식하지 못하기 때문에*/
+    /* overflow:hidden; */
+}
+.box .container::after {clear: both; display: block; content: '';} /* =overflow:hidden */
+.box .container > * {width: 100px; height: 100px;} /* *는 모든것*/
+.box .container h1 {
+    background-color: bisque;
+    float:left;
+    /*글자만 옮기고 싶을때 인라인(글자)의 부모에 명령을 주기도 한다.*/
+    text-align:center; /*inline 가운데정렬*/
+    /* padding-top:40px; */
+    line-height:100px; /*값은 높이와 동일하게 글자가 한줄일때 인라인 수직가운데정렬 두줄일땐 padding-top으로 정렬*/
+}
+.box .container p {
+    background-color: coral;
+    float: right;
+    line-height: 100px;
+    text-align:right;
+}
+.box .container h1+p {
+    background-color: hotpink;
+    float: left;
+    text-align: center; 
+    /* Tag, class, id 순서대로 작성한다. *는 태그 주변에 위치한다. */
+}
