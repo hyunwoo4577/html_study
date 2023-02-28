@@ -1,0 +1,29 @@
+main {
+    background-color: yellow;
+    width:850px;
+    margin:0 auto;
+}
+main .top {
+    background-color: aqua;
+
+}
+main .top h1 {
+    display: inline-block;
+    float: left;
+    font-size: 1.250rem;
+    line-height: 100px;
+}
+main .top dl {height:100px;}
+main .top dt {display: none;}
+main .top dd {
+    display: inline-block;
+    float: right;
+    font-size:0.875rem;
+    line-height: 100px;
+    }
+main .top dd span {}
+main .top dd em {}
+main section {background-color: beige;}
+main section h2 {margin-top: 100px;}
+main section p {}
+main section p em {}
