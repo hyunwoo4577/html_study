@@ -1,0 +1,63 @@
+body {
+    width:1080px;
+    margin:0 auto;
+    padding-top:20px;}
+header {}
+header form {  width:435px; 
+    border:3px soild #1e61a8;}
+header form fieldset {
+    }
+header form fieldset legend {display: none;}
+header form fieldset input {
+    float:left;
+    display:inline-block;
+    width:
+}
+header form fieldset button {}
+main {}
+main aside {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    background-color: #b0cae7;}
+main aside h2 {
+    text-align: center;
+    color:#1e61a8;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+main aside .menu {}
+main aside .menu a {
+    display:block;
+
+}
+main .container {
+    display: inline-block;
+    width: 848px;
+    height: 848px;
+    background-color: aqua;
+}
+main .container .title_path {}
+main .container .title_path h1 {}
+main .container .title_path dl {}
+main .container .title_path dl dt {}
+main .container .title_path dl dd {}
+main .container .title_path dl dd img {}
+main .container .title_path dl dd span {}
+main .container .contents {}
+main .container .contents .login box {}
+main .container .contents .login box h2 {} 
+main .container .contents .login box h2 span {} 
+main .container .contents .login box p {} 
+main .container .contents .login box form {} 
+main .container .contents .login box fieldset {} 
+main .container .contents .login box legend {} 
+main .container .contents .login box ul {} 
+main .container .contents .login box ul li {} 
+main .container .contents .login box .btn {} 
+main .container .contents .login box .btn button {} 
+main .container .contents .login box .join_search {} 
+main .container .contents .login box .join_search a {} 
+main .container .contents .login box input {} 
+main .container .top link {} 
+main .container .bottom_text {} 

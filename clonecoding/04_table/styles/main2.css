@@ -1,0 +1,24 @@
+#t2 {width: 1200px;
+    margin-top: 50px auto 0;
+    border-top: 3px solid #333;
+}
+#t2 thead {}
+#t2 thead tr {text-align: center;}
+#t2 thead tr th{padding:30px 0; background-color: #f5f5f5;}
+#t2 thead tr th span {font-size:0.813rem;}
+#t2 tbody {}
+#t2 tbody tr {}
+#t2 tbody tr th #t2 tbody tr td {padding:30px;}
+#t2 tbody tr th:first-child {font-weight: 700;}
+#t2 tbody tr th:nth-child(2) {font-weight: 700;}
+#t2 tbody tr th span {background-color: #c286ff;
+display: inline-block;
+border-radius: 8px; padding:3px;}
+#t2 tbody tr th em {font-size: 1.25rem;}
+#t2 tbody tr td {text-align:center;}
+#t2 tbody tr td:nth-last-of-type(1) {width:150px}
+#t2 tbody tr td span {font-size:0.813}
+#t2 tbody tr td em {color: #ec01ec; font-weight: 700;}
+#t2 tbody tr td a {border-radius: 10px; padding:7px 5px;}
+#t2 tbody tr td .join {border:1px soild #d2d2d2}
+#t2 tbody tr td .select {background-color: #c286ff; color:#fff}

@@ -2,28 +2,33 @@ main {
     background-color: yellow;
     width:850px;
     margin:0 auto;
+    border: 1px solid #aaa;
 }
 main .top {
     background-color: aqua;
+    border-bottom: 1px solid #aaa;
+    padding:0 25px;
 
 }
 main .top h1 {
-    display: inline-block;
     float: left;
     font-size: 1.250rem;
     line-height: 100px;
 }
-main .top dl {height:100px;}
+main .top dl {float:right}
 main .top dt {display: none;}
 main .top dd {
-    display: inline-block;
-    float: right;
     font-size:0.875rem;
     line-height: 100px;
     }
 main .top dd span {}
 main .top dd em {}
-main section {background-color: beige;}
-main section h2 {margin-top: 100px;}
+main section {background-color: beige;
+    /* 배경이미지 속성 */
+    background-image:url(../images/bg_png.png) ;
+    background-size:50%;/* w h */
+    background-repeat: no-repeat;/* 기본 repeat */
+    background-position: right -100px;}/*x y -가 위로 +가 아래로*/
+    main section h2 {margin-top: 100px;}
 main section p {}
 main section p em {}
