@@ -1,0 +1,48 @@
+.notice {
+    width:495px; background-color: aqua;
+    border: 1px solid #ccc; border-radius: 10px;
+    padding:25px 20px 40px 25px;
+    position:relative;
+}
+.notice h2 {
+    font-size:1.3rem;
+    font-weight:700; 
+    letter-spacing:-0.02em;
+    margin-bottom:30px;} 
+.notice .more {position: absolute; right:20px; top:25px;} 
+.notice ul {
+    background-color: yellowgreen;
+    margin-left:100px;} 
+.notice ul li {
+    padding: 7px 0 ;
+    position: relative;}
+.notice ul li::after {
+    clear:both; content:'';display: inline-block;
+    }
+.notice ul li::before {
+    content:''; display: inline-block; 
+    width: 3px; height: 3px; background-color: #000; 
+    position:absolute; top: 13px; }
+.notice ul li a {
+    float: left;
+    background-color: violet;
+    width:70%;
+    white-space:nowrap;/*한줄처리*/
+    overflow:hidden; /*정해진 크기 안에서만 보이기*/
+    text-overflow:ellipsis;}
+    /*외부처리를 말줄임...*/
+    /* 글이 넓이가 넘으면 말줄임    
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden; */
+    /* 태그에 순서와 상관없이 보낼때 position을 쓴다 */
+.notice ul li span {float: right;} 
+footer {}
+footer a {margin-right: 10px;}
+footer a:nth-child(3) {color:blue}
+/* 구분선만들기 (사실은 면임)*/
+footer a::after {
+    width:1px; height:15px; background-color: red; content:''; display:inline-block; position: relative; right:-5px; top:2px}
+/* {content: '|';display: inline; padding-left: 10px;} 위 방법 단점 : 글자크기보다 작거나 크게 할 수 없다.
+ (디자인다양성부족) 움직일때는 position으로 움직인다 */
+footer a:last-child::after {display: none;}

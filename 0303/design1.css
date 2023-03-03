@@ -1,0 +1,15 @@
+html,body{height:300vh;}/* vh=보고있는 화면:사용자가 보고있는화면크기 100이 현재 300이면 두번 더 넘어가는 크기 */
+.container {
+    width: 500px; padding: 30px;
+    background-color: aqua;
+    margin:50px auto 0;
+    position: fixed; right:0; top:0;}
+.container .contents {
+    background-color: yellow; padding: 30px;}
+.container .contents > *{display: block; padding:10px; border:2px solid red;  background-color: #fff;}
+.container .contents h1 {position:absolute; left:0;top:0;} 
+    /* 부모를 기준으로 움직일 필요가 없다 relative */
+.container .contents p {position:absolute; right:0; bottom: 0;}
+    /* 부모를 기준으로 움직이는데 부모에 position이 없으면 body기준으로 움직인다 top 같은 것을 줘도 그에 따라 움직인다 */
+    /* relative가 아닌 부모에 position 만 들어가면 어떤 것이든 기준이 된다.  */
+.container .contents a {}
