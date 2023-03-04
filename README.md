@@ -114,3 +114,16 @@
   border-bottom:1px solid #aaa;  
   border-left:1px solid #aaa;
   border-right:1px solid #aaa;</p>
+ <h2>23.02.24-CSS_HTML</h2>
+  <p>white-space:nowrap;/*한줄처리*/
+    overflow:hidden; /*정해진 크기 안에서만 보이기*/
+    text-overflow:ellipsis;}
+    /*외부처리를 말줄임...*/
+    /* 글이 넓이가 넘으면 말줄임    
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden; */
+    /* 태그에 순서와 상관없이 보낼때 position을 쓴다 */</p>
+    <p>width:1px; height:15px; background-color: red; content:''; display:inline-block; position: relative; right:-5px; top:2px}
+    /* {content: '|';display: inline; padding-left: 10px;} 위 방법 단점 : 글자크기보다 작거나 크게 할 수 없다.
+    (디자인다양성부족) 움직일때는 position으로 움직인다 */</p>
