@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-2</title>
+    <style>
+        .container1 {
+            background-color: aqua; padding: 10px; margin: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content:center;
+            height: 500px;
+            align-items: center;}
+        
+        .container1 > * {width: 100px; height: 100px;border: 2px solid #000;}
+        .container1 .item {}
+        .container2 {
+            background-color: aqua; padding: 10px; margin: 50px;
+            display: flex;
+            flex-flow: row nowrap;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-content:center;
+            height: 500px;
+            align-items: center;}
+        
+        .container2 > * {width: 100px; height: 100px;border: 2px solid #000;}
+        .container2 .item {}
+        .container3 {
+            background-color: aqua; padding: 10px; margin: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            justify-content: center;
+            /* align-content:space-around; */
+            height: 500px;
+            align-items:center ;
+            align-content: center;}
+        .container3 > * {width: 150px; height: 100px;border: 2px solid #000;}
+        .container3 .item {}
+        .container4 {
+            background-color: aqua; padding: 10px; margin: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            /* align-content:space-around; */
+            height: 300px;
+            align-items:center ;
+                align-content: space-between;}
+        .container4 > * {width: 100px; height: 100px;border: 2px solid #000;}
+        .container4 .item {}
+    </style>
+</head>
+<body>
+    <div class=container1>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class=container2>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class=container3>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class=container4>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class=container>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>

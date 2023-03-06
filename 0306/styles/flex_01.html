@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/design2.css" rel="stylesheet" type="text/css">
+    <style>
+        .container {
+            background-color: aqua; padding: 20px 0px;
+            display: flex;
+            /* flex-direction: row-reverse;float의 rightx2와 같다 */
+            /* flex-direction: row;/*가로정렬 flex-wrap:wrap; */
+            /* float보다 기능이 많아서 레이아웃엔 더 많이 쓴다. */
+            /* justify content는 메인축 align content는 교차축 */
+            flex-flow: row wrap;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            /* align-content:flex-end; */
+            height: 500px;
+            align-items: center;}
+            /* nowrap일때 align-item을 쓴다 (한줄일때) */
+            
+        .container > * {
+            width:100px; height:100px;
+            border: 2px solid #000;
+            font-size: 2rem;
+            text-align: center; line-height: 100px;
+        }
+        .container .item:nth-child(3n) {
+            align-self: flex-start;}
+        .container .item:nth-child(1) {order:3; flex-grow: 1;}
+        .container .item:nth-child(2) {order:2; flex-grow: 1;}
+        .container .item:nth-child(3) {order:1; flex-grow: 2;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <!-- <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div> -->
+    </div>
+</body>
+</html>

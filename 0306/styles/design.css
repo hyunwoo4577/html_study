@@ -1,0 +1,23 @@
+#wrap {background-color:lightgrey;}
+#wrap > * {width:1000px; margin: 0 auto;}/* wrap 안에 모든 자식 중복되는 값임을 편하게 */
+#wrap header {background-color: yellow; height: 100px;}
+#wrap nav {
+    background-color: coral; height: 50px;
+    text-align: center;/* 자식중에 인라인인 a를 정렬 */
+    position: sticky;/*내가 스크롤을 내릴때 top:0 이 되면 따라온다*/}
+#wrap nav a { line-height: 50px/*정해진 높이중 가운데로 보내기 위해*/; margin-right: 20px;}
+#wrap nav a :last-child{margin-right:0;}
+#wrap section {
+    background-color: aqua; height: 300vh;/*내가보고있는화면100x3스크롤가능vh*/
+    position: relative;
+}
+#wrap section * {width:200px; height: 200px;}
+#wrap section h1 {
+    background-color: yellowgreen;
+    position: absolute; left:0; top:0;
+    z-index:200;
+}
+#wrap section h2 {
+    background-color: hotpink; 
+    position: absolute; left:100px;top: 100px;
+    z-index:100;}/*z-index= 중첩순서변경 위아래로 변경가능 100이나 200 높은숫자로 설정해 놓아야함 position이 있어야 쓸 수 있다 */
