@@ -1,6 +1,149 @@
-header {}
-header h1 {}
+header {
+    background:rgba(0,0,0,0.6);
+    /* background color - background 0,0,0은 색상이고 0.6은 투명도*/
+    position: fixed; left:0; top:0; z-index: 900;
+        width: 100%;
+    /* position fixed를 쓰면 인라인처럼 바뀌어서 크기가 바뀌기 때문에 width 값을 100%로 바꿔준다 */
+    /* position은 부유하는 특성 때문에 z-index로 가장 높은 숫자를 넣어주면 다시 위로 올라온다 fixed absolute sticky 등등*/
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; padding: 0 25px;
+    align-items: center;
+    }
+header h1 {width:150px;}
 header h1 a {}
+header h1 a img {width: 100%;}
+/* 이미지 태그의 크기를 조정하려면 그의 부모에게 크기를 조정한다 인라인보다는 블록 부모에게 하는 것이 편함 */
 header nav {}
-header nav a {}
-header .lnb {}
+header nav a {color:#eee; margin-left: 25px;}
+header nav a:hover {color:#fff}
+header nav a :first-child {margin-left: 0;}
+header .lnb {
+    color: #fff;
+    font-weight: 700;}
+header .lnb:hover {color: #ff0}
+/* 마우스 올렸을 때 색깔 변하는 것 */
+header .lnb::after {
+    font-weight: 600;
+    content:'\f138';
+    display: inline-block;
+    padding-left: 10px;
+    color: #17a2b8;
+}
+/* visual */
+main {background-color: #f8f9fa;}
+main > * {margin-bottom: 50px;} /* 밑쪽에 margin 0 auto 있으면 없어지기 때문에 margin 0 auto를 margin 50 auto로 바꾼다 */
+main .visual {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+main .visual video {width: 100%;}
+/* 비율문제가 있음으로 줄일때는 부모에서 줄인다 (자른다) overflow:hidden */
+main .visual .ai {
+    width:700px;
+    position:absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    /*기준점을 왼쪽상단에서 중앙으로 바꿔준다(x축,y축) position과 함께 가운데로 보낼때 정해진 옵션임*/
+    /* AI가 위로 올라와야 함으로  */
+}
+main .visual .ai img {width:100%}
+/* 부모에서 px을 바꾼다 */
+main .board {
+    width:1140px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .board a {
+    width:32%;
+    height: 350px;
+    background: #fff;
+    padding: 20px;
+}
+main .board a h1 {
+    margin-bottom: 20px;
+    font-size:1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    }
+main .board a h1:hover {text-decoration: underline;}
+main .board a p {margin-bottom: 20px; font-size: 1.2rem; letter-spacing: -0.02em;}
+main .board a .category {}
+main .board a:first-child .contents {
+    color:rgb(157, 154, 154);
+    /* 여러줄말줄임처리 */
+    white-space:wrap;
+    overflow:hidden ; text-overflow:ellipsis;
+    /* + */
+    -webkit-line-clamp: 4;
+    -webkit-box-orient : vertical;
+    display: -webkit-box;}
+main .board a .contents {line-height: 1.5;}
+main .board a:nth-child(2) p:nth-child(3) {margin-bottom: 20px;}
+main .gallery {    
+    width:1140px; margin: 50px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top:50px;}
+main .gallery a {
+    width:32%;
+    height: 500px;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+main .gallery a p {margin-bottom: 20px; font-size: 1.2rem; letter-spacing: -0.02em;}
+main .gallery a h1 {   
+    margin-bottom: 20px;
+    font-size:1.8rem;
+    font-weight: 700;
+    line-height: 1.2;}
+main .gallery a h1:hover {text-decoration: underline;}
+main .gallery a .category {}
+main .gallery a .img {
+}
+main .gallery a .img img {width: 100%;}
+main .gallery a .contents {
+    white-space: wrap; overflow: hidden; text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 1.5;
+    color:rgb(157, 154, 154);
+}
+/* 공통으로 들어가는 부분은 div로 묶어서 해결한다. */
+footer {
+    border-top:1px solid #000;
+    }
+footer .f_container {    
+    width: 1140px;
+    margin: 0 auto;}
+footer .f_container .f_top {
+    display: flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+} 
+footer .f_container .f_top .f_t_left {} 
+footer .f_container .f_top .f_t_left a {margin-right: 16px;}
+footer .f_container .f_top .f_t_left a:last-child::after {margin-right:0;}
+footer .f_container .f_top .f_t_left a::after {content:''; display: inline-block; width: 1px; height:9px; background-color: #000;
+    position: relative; right:-10px; top:-2px;}
+footer .f_container .site {
+padding:10px 15px; background-color: #333; color:#fff;
+border-radius: 5px;
+}
+footer .f_btm {
+    padding:40px 0
+}
+footer .f_btm > * {
+    line-height:1.5rem;
+    color:#aaa;
+}
+footer .f_btm address {
+}
+footer .f_btm p {
+}
