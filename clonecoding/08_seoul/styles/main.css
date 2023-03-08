@@ -1,0 +1,128 @@
+header {
+    width: 1152px; 
+    margin: 0 auto;
+}
+header .h_top {
+    height: 48px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    margin:0 10px;
+    align-items: center;
+    }
+header .h_top .h_t_left {
+    /* h1과 nav를 옆으로 보내기 위한 부모대상 */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    }
+header .h_top .h_t_left h1 {}
+header .h_top .h_t_left h1 a {}
+header .h_top .h_t_left h1 a img {
+    margin-bottom: 10px;
+}
+header .h_top .h_t_left nav {margin-left: 7px;}
+header .h_top .h_t_left nav a {
+    margin-right: 20px;}
+header .h_top .h_t_right {
+
+    }
+header .h_top .h_t_right a {
+    margin-right: 10px;
+
+
+}
+header .h_btm { 
+    height: 119px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .h_btm h1 {
+
+    }
+header .h_btm h1 a {
+    }
+header .h_btm h1 a img{
+
+
+}
+header .h_btm #searchFrm {
+    background-color: #fff;
+    border:3px solid #1e6cb3; width: 300px; padding:5px 0;
+
+}
+header .h_btm #searchFrm fieldset {}
+header .h_btm #searchFrm fieldset input[name$=search] {
+    border: 0;
+    outline:none; 
+    width: 90%;
+}
+header .h_btm #searchFrm fieldset input[name$=search]::placeholder {
+    color: #1e6cb3;
+    padding-left: 7px;
+}
+header .h_btm #searchFrm fieldset #search {position: relative; top:3px}
+header .h_btm #searchFrm fieldset #search img {}
+header .h_btm .right {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: flex-end;
+}
+header .h_btm .right .r_top {
+
+
+}
+header .h_btm .right .r_top #lang {border: 1px soild #1e6cb3;
+}
+header .h_btm .right .r_top #lang option {}
+header .h_btm .right .r_top #go {background: #1e6cb3; color:#fff; width:36px; height: 27px;
+}
+header .h_btm .right .r_btm  {
+}
+header .h_btm .right .r_btm p:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+header .h_btm .right .r_btm p {line-height:1.5rem;}
+main .bnr_wrap {
+    width: 1152px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    background-color: aqua;
+
+}
+main .bnr_wrap .left {
+    position: relative;
+}
+main .bnr_wrap .left .bnr {}
+main .bnr_wrap .left .bnr img {
+
+}
+main .bnr_wrap .left .close {
+    position: absolute; right:10px; bottom:20px;
+    display:inline-block;
+    background-color: #1e6cb3; color:#fff;
+    padding: 5px 5px;
+    border-radius: 5px;}
+main .bnr_wrap .right {
+    background-color: beige;
+    width: 360px;
+
+}
+main .bnr_wrap .right .corona {position: relative; display:block;}
+main .bnr_wrap .right .corona {}
+main .bnr_wrap .right .corona img {}
+main .bnr_wrap .right .corona span {position: absolute; display: inline-block; height:22px;background-color: aqua;}
+main .bnr_wrap .right .corona .date {text-align: right;width:139px; right: 31px; top:11px}
+main .bnr_wrap .right .corona .result {text-align:center;}
+main .bnr_wrap .right .corona .result1 {width:140px; height:21px; top:80px;left:30px;}
+main .bnr_wrap .right .corona .result2 {width:140px; height:21px; top:80px; right:30px;}
+main .bnr_wrap .right .corona .result3 {width:96px; height: 21px; bottom: 52px; left:30px;}
+main .bnr_wrap .right .corona .result4 {width: 95px; height: 21px; bottom: 52px; right:120px;}
+main .bnr_wrap .right .corona .result5 {width: 61px; height: 21px; bottom: 53px; right:31px;}
+main .bnr_wrap .right .corona .bnr {}
+main .bnr_wrap .right .corona .bnr img {}
