@@ -1,0 +1,81 @@
+body {background-color:#fcf3fd;}
+header {
+    display: flex;
+    justify-content:center;
+    margin: 40px 0;
+}
+header h1 {}
+header h1 a {}
+header h1 img {}
+main {
+    display: flex;
+    justify-content: center;}
+main #sign_up {}
+main #sign_up fieldset {}
+main #sign_up fieldset dl {}
+main #sign_up fieldset dl dt {    
+    margin-bottom: 10px;}
+main #sign_up fieldset dl dd { 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+main #sign_up fieldset dl dd input[id$=user] {
+    border: 0;
+    width: 95%;
+    height: 60%;
+}
+main #sign_up fieldset dl dd span {
+}
+
+main #sign_up fieldset dl .birth {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+main #sign_up fieldset dl .birth dd {
+    width:30%
+}
+main #sign_up fieldset dl dd select {
+    width:95%
+}
+main #sign_up fieldset dl dd select option {}
+main #sign_up fieldset dl dt em {}
+main #sign_up fieldset dl .phone {
+
+
+}
+main #sign_up fieldset dl .phone {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+main #sign_up fieldset dl .phone input {
+    width: 73%;
+    height: 50px;
+    border: 0;
+    margin-bottom: 10px;
+}
+main #sign_up fieldset dl .phone .number {
+    width: 25%;
+    height: 50px;
+    background-color: aqua;}
+main #sign_up fieldset #v_code {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+main #sign_up fieldset p .sign_up {
+    background-color: aqua;
+    width:100%;
+    height: 50px;
+    margin-bottom: 40px;
+
+}
