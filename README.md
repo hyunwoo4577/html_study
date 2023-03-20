@@ -127,3 +127,55 @@
     <p>width:1px; height:15px; background-color: red; content:''; display:inline-block; position: relative; right:-5px; top:2px}
     /* {content: '|';display: inline; padding-left: 10px;} 위 방법 단점 : 글자크기보다 작거나 크게 할 수 없다.
     (디자인다양성부족) 움직일때는 position으로 움직인다 */</p>
+ <h2>23.03.20-CSS_HTML</h2>
+  <p>자바스크립트의 데이터 종류
+ 
+1. 원시 데이터
+* 참조를 이루지 않고 특정 변수에 바로 데이터값이 저장되어있는 경우를 뜻합니다.
+* 각 원시데이터 특징에 따라 한 가지 값만 담을 수 있습니다.
+* String, Number, Boolean, Null, Undefined, Symbol(ES6) 총 6개로 이루어져 있습니다.
+* String(문자)
+* number(숫자)
+* boolean(논리형)
+* null(없음)
+* undefined(정의되지 않음)
+2. 참조 데이터
+* 객체, 배열, 함수 등과 같은 Object 형식의 타입입니다.
+* 변수의 크기가 동적으로 변합니다.
+* 원시 데이터와 다르게 여러 속성의 모음을 저장할 수 있습니다.
+* 원시 데이터 타입을 제외한 나머지는 모두 참조 데이터입니다.
+3. (ES5) 변수 선언 var
+* ES5 이전버전부터 사용하던 변수 지정방법입니다.
+* 데이터를 저장하는 장소 or 읽고 쓰고 할 수 있는 장소
+* 변수는 한번에 한가지 값만 저장할 수 있습니다.
+* 새로운 값을 대입하면 기존 값은 삭제되게 됩니다.
+   다른 연산자 등을 이용하면 다른 결과를 낼 수도 있습니다.
+변수는 이럴 때 사용해요!
+ 특정 사이트의 로그인 유무를 변수에 저장합니다.
+ 사용자가 선택한 메뉴 항목도 변수에 저장합니다.
+ 출력되는 메뉴 항목도 변수에 저장합니다.
+ 게임에서 현재 기록 점수도 변수에 저장됩니다.
+ 쇼핑몰 장바구니에 담겨있는 상품목록도 변수에 저장됩니다.
+ 게시판에 게시물 목록 들도 변수에 저장되있는 내용을 출력한겁니다.
+ 변수 이름을 위한 규칙들
+변수의 이름은 반드시 문자, 달러기호($) 언더스코어(_) 시작합니다.
+절대로 숫자로 시작해서는 안되요!
+변수의 이름은 대시(-)나 마침표(.)같은 기호들을 사용할 수 없습니다.
+키워드나 예약어는 사용할 수 없어요. 
+break, case, catch, continue, default, delete, do, else, finally, for,if, instanceof, new, reutrn, switch, this, throw, try, function, typeof, var, void, while, with, preventDefault, length, click, mouseover, setInterval, css 등..
+모든 변수는 대/소문자를 구별합니다. score와 Score는 다른 변수에요!
+변수가 저장할 정보의 종류를 잘 표현하는 단어를 사용합시다
+사람의 이름은 firstName 성은 lastName 나이는 age
+변수의 이름에 두 개이상의 단어를 사용할 때에는 뒷 단어의 첫 글자를
+대문자로 사용하자 또는 단어를 언더스코어(_)로 연결해도 됩니다
+ex) firstname X firstName O first_name O
+
+1. 변수(let)
+* 기존 변수 선언 키워드 var 의 단점을 해결한 새로운 ES6 이후의 변수 선언 키워드 let
+* 특정 데이터를 저장할 때 사용한다.
+* 한번 선언된 변수명은 중복 사용할 수 없다.
+2. 상수(const)
+* 변하지 않는 값 상수를 담는다.
+* 선언과 동시에 대입 값을 작성해야 한다.
+* 초기 데이터 외에 다른 데이터를 대입할 수 없다.
+* 중복된 상수명은 사용할 수 없다.
